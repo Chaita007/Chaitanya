@@ -12,8 +12,8 @@
     }
     .animated-gradient {
       background: linear-gradient(270deg, #1e3a8a, #6b21a8, #1e40af);
-      background-size: 600% 600%;
-      animation: gradientBG 10s ease infinite;
+      background-size: 300% 300%;
+      animation: gradientBG 15s ease-in-out infinite;
     }
     @keyframes gradientBG {
       0% { background-position: 0% 50%; }
@@ -31,17 +31,6 @@
         transform: translateY(0);
       }
     }
-    .animated {
-      animation: bounce 2s infinite;
-    }
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-    }
     header::before {
       content: '';
       position: absolute;
@@ -57,7 +46,7 @@
       <source src="background.mp4" type="video/mp4" />
     </video>
     <div class="z-20">
-      <h1 class="text-5xl md:text-6xl font-bold text-white animated">Chaitanya Chinchole</h1>
+      <h1 class="text-5xl md:text-6xl font-bold text-white">Chaitanya Chinchole</h1>
       <p class="text-xl text-blue-400 mt-4 italic animate-pulse">🎬 Turning Scrolls into Engagement – One Reel at a Time</p>
       <a href="#contact" class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">Let’s Work Together</a>
     </div>
@@ -66,10 +55,22 @@
   <section class="p-8 fade-in">
     <h2 class="text-3xl font-bold mb-6 text-center border-b-2 border-blue-500 inline-block pb-2">📂 Featured Reels</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <iframe src="https://www.instagram.com/reel/C-dlwHgOWUh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
-      <iframe src="https://www.instagram.com/reel/CODE2/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
-      <iframe src="https://www.instagram.com/reel/CODE3/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
-      <iframe src="https://www.instagram.com/reel/CODE4/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
+      <video controls preload="none" class="w-full rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+        <source src="reels/reel1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls preload="none" class="w-full rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+        <source src="reels/reel2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls preload="none" class="w-full rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+        <source src="reels/reel3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls preload="none" class="w-full rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+        <source src="reels/reel4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
 
@@ -78,24 +79,6 @@
     <p class="text-lg max-w-3xl mx-auto text-gray-300 leading-relaxed">
       I help brands, influencers, and entrepreneurs stand out on social media with high-retention Instagram Reels and YouTube Shorts. I blend engaging scripts, smooth transitions, trend-savvy audio, and viral storytelling to make every second of your video count.
     </p>
-  </section>
-
-  <section class="bg-gray-800 py-16 px-8 fade-in">
-    <h2 class="text-4xl font-bold mb-6 text-center text-white">📈 Project Highlights</h2>
-    <div class="grid md:grid-cols-3 gap-6 text-center">
-      <div class="bg-black bg-opacity-40 p-6 rounded-xl shadow-lg animate-pulse">
-        <h3 class="text-xl font-semibold mb-2">🔥 Viral Short</h3>
-        <p class="text-gray-300 text-sm">100k+ views | Hook-first edit | Created in 48 hrs</p>
-      </div>
-      <div class="bg-black bg-opacity-40 p-6 rounded-xl shadow-lg animate-bounce">
-        <h3 class="text-xl font-semibold mb-2">🎯 Hook Master</h3>
-        <p class="text-gray-300 text-sm">Scroll-stopping intros | CTA-fueled endings</p>
-      </div>
-      <div class="bg-black bg-opacity-40 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-2">⚡ Crazy Animation Edits</h3>
-        <p class="text-gray-300 text-sm">Eye-catching motion | Trend-driven effects</p>
-      </div>
-    </div>
   </section>
 
   <section class="animated-gradient py-16 px-8 text-center text-white fade-in">
@@ -115,9 +98,9 @@
     <p class="mb-4 text-gray-300 text-lg">Let’s collaborate to make your next viral reel. Just drop a message!</p>
     <div class="text-lg">
       <p class="mb-2">Instagram (Main): <a href="https://www.instagram.com/chaiitanya__" class="text-blue-400 hover:underline" target="_blank">@chaiitanya__</a></p>
-      <p class="mb-2">Instagram (Work): <a href="https://www.instagram.com/chai.reelcraft/" class="text-blue-400 hover:underline" target="_blank">@chai.reelcraft</a></p>
+      <p class="mb-2">Instagram (Work): <a href="https://www.instagram.com/om.chinchole_/" class="text-blue-400 hover:underline" target="_blank">@om.chinchole_</a></p>
       <p class="mb-2">Email: <a href="mailto:chaitanyachinchole7@gmail.com" class="text-blue-400 hover:underline">chaitanyachinchole7@gmail.com</a></p>
-      <p class="mt-4"><a href="https://forms.gle/jFL3J7UQqyCrzzqaA" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300" target="_blank">📄 Enquiry Form</a></p>
+      <p class="mt-4"><a href="https://forms.gle/vAaAZfEGuzwXZ8HPA" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300" target="_blank">📄 Enquiry Form</a></p>
     </div>
   </section>
 
