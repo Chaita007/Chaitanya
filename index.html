@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaitanya Chinchole | Reels Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+    .animated-gradient {
+      background: linear-gradient(270deg, #1e3a8a, #6b21a8, #1e40af);
+      background-size: 600% 600%;
+      animation: gradientBG 10s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animated {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black via-gray-900 to-black text-white">
+  <header class="relative overflow-hidden h-screen flex flex-col justify-center items-center text-center bg-black">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="z-20">
+      <h1 class="text-5xl md:text-6xl font-bold text-white animated">Chaitanya Chinchole</h1>
+      <p class="text-xl text-blue-400 mt-4 italic animate-pulse">🎬 Turning Scrolls into Engagement – One Reel at a Time</p>
+      <a href="#contact" class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">Let’s Work Together</a>
+    </div>
+  </header>
+
+  <section class="p-8 fade-in">
+    <h2 class="text-3xl font-bold mb-6 text-center border-b-2 border-blue-500 inline-block pb-2">📂 Featured Reels</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <iframe src="https://www.instagram.com/reel/CODE1/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/CODE2/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/CODE3/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
+      <iframe src="https://www.instagram.com/reel/CODE4/embed" class="w-full aspect-video rounded-xl shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="bg-gray-900 py-16 px-8 text-center fade-in">
+    <h2 class="text-4xl font-bold mb-6 text-white">💡 What I Do</h2>
+    <p class="text-lg max-w-3xl mx-auto text-gray-300 leading-relaxed">
+      I help brands, influencers, and entrepreneurs stand out on social media with high-retention Instagram Reels and YouTube Shorts. I blend engaging scripts, smooth transitions, trend-savvy audio, and viral storytelling to make every second of your video count.
+    </p>
+  </section>
+
+  <section class="bg-gray-800 py-16 px-8 fade-in">
+    <h2 class="text-4xl font-bold mb-6 text-center text-white">📈 Project Highlights</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-black bg-opacity-40 p-6 rounded-xl shadow-lg animate-pulse">
+        <h3 class="text-xl font-semibold mb-2">🔥 Viral Short</h3>
+        <p class="text-gray-300 text-sm">100k+ views | Hook-first edit | Created in 48 hrs</p>
+      </div>
+      <div class="bg-black bg-opacity-40 p-6 rounded-xl shadow-lg animate-bounce">
+        <h3 class="text-xl font-semibold mb-2">🎯 Hook Master</h3>
+        <p class="text-gray-300 text-sm">Scroll-stopping intros | CTA-fueled endings</p>
+      </div>
+      <div class="bg-black bg-opacity-40 p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">⚡ Crazy Animation Edits</h3>
+        <p class="text-gray-300 text-sm">Eye-catching motion | Trend-driven effects</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="animated-gradient py-16 px-8 text-center text-white fade-in">
+    <h2 class="text-4xl font-bold mb-8">🚀 My Skills</h2>
+    <div class="flex flex-wrap justify-center gap-4 text-lg font-medium">
+      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">CapCut Mastery</span>
+      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Instagram Reels</span>
+      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">YouTube Shorts</span>
+      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Script-to-Reel Execution</span>
+      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Voiceovers & Music Sync</span>
+      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Hook + CTA Design</span>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-black py-16 px-8 text-center fade-in">
+    <h2 class="text-4xl font-bold mb-6">📬 Contact Me</h2>
+    <p class="mb-4 text-gray-300 text-lg">Let’s collaborate to make your next viral reel. Just drop a message!</p>
+    <div class="text-lg">
+      <p class="mb-2">Instagram (Main): <a href="https://www.instagram.com/chaiitanya__" class="text-blue-400 hover:underline" target="_blank">@chaiitanya__</a></p>
+      <p class="mb-2">Instagram (Work): <a href="https://www.instagram.com/om.chinchole_/" class="text-blue-400 hover:underline" target="_blank">@om.chinchole_</a></p>
+      <p class="mb-2">Email: <a href="mailto:chaitanyachinchole7@gmail.com" class="text-blue-400 hover:underline">chaitanyachinchole7@gmail.com</a></p>
+      <p class="mt-4"><a href="https://forms.gle/vAaAZfEGuzwXZ8HPA" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300" target="_blank">📄 Enquiry Form</a></p>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-400 text-sm py-6 border-t border-gray-700 bg-gray-900">
+    © 2025 Chaitanya Chinchole. All rights reserved.
+  </footer>
+</body>
+</html>
