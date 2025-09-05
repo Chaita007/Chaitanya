@@ -10,15 +10,19 @@
     body {
       font-family: 'Outfit', sans-serif;
     }
-    .animated-gradient {
-      background: linear-gradient(270deg, #1e3a8a, #6b21a8, #1e40af);
-      background-size: 300% 300%;
-      animation: gradientBG 15s ease-in-out infinite;
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 10;
     }
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    .name-font {
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      letter-spacing: 1px;
+    }
+    .section-title {
+      @apply text-3xl md:text-4xl font-bold mb-6;
     }
     .fade-in {
       opacity: 0;
@@ -31,81 +35,73 @@
         transform: translateY(0);
       }
     }
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 10;
-    }
-    .name-font {
-      font-family: 'Helvetica', 'Arial', sans-serif;
-    }
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
-    }
   </style>
 </head>
-<body class="bg-gradient-to-b from-black via-gray-900 to-black text-white">
+<body class="bg-black text-white">
+  <!-- Hero Section -->
   <header class="relative overflow-hidden h-screen flex flex-col justify-center items-center text-center bg-black">
     <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
       <source src="background.mp4" type="video/mp4" />
     </video>
-    <div class="z-20">
-      <h1 class="text-5xl md:text-6xl font-bold text-white name-font">Chaitanya Chinchole</h1>
-      <p class="text-xl text-blue-400 mt-4 italic animate-pulse">🎬 Turning Scrolls into Engagement – One Reel at a Time</p>
-      <a href="#contact" class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">Let’s Work Together</a>
+    <div class="z-20 px-4">
+      <h1 class="text-5xl md:text-6xl font-bold name-font">Chaitanya Chinchole</h1>
+      <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-xl mx-auto">Reels & Shorts Editor helping brands and creators turn attention into engagement.</p>
+      <a href="#contact" class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300">Work With Me</a>
     </div>
   </header>
 
-  <!-- 🔥 Drive Portfolio Section -->
-  <section class="p-8 fade-in text-center">
-    <h2 class="text-3xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-2">📂 My Portfolio</h2>
-    <p class="text-lg text-gray-300 mb-4">Check out my editing work directly from Google Drive:</p>
-    <a href="https://drive.google.com/drive/folders/https://drive.google.com/drive/folders/1tmCNycU_nmS2c6wUjKx32y2PidZAKusS?usp=drive_link" 
-       class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300" 
+  <!-- Portfolio Section -->
+  <section class="py-16 px-8 text-center fade-in bg-gray-900">
+    <h2 class="section-title">Portfolio</h2>
+    <p class="text-lg text-gray-300 mb-6">Explore my editing work and projects.</p>
+    <a href="https://drive.google.com/drive/folders/YOUR_LINK_HERE"
+       class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300"
        target="_blank">
-       🚀 View My Work
+       View Portfolio
     </a>
   </section>
 
-  <section class="bg-gray-900 py-16 px-8 text-center fade-in">
-    <h2 class="text-4xl font-bold mb-6 text-white">💡 What I Do</h2>
+  <!-- What I Do Section -->
+  <section class="py-16 px-8 text-center fade-in">
+    <h2 class="section-title">What I Do</h2>
     <p class="text-lg max-w-3xl mx-auto text-gray-300 leading-relaxed">
-      I help brands, influencers, and entrepreneurs stand out on social media with high-retention Instagram Reels and YouTube Shorts. I blend engaging scripts, smooth transitions, trend-savvy audio, and viral storytelling to make every second of your video count.
+      I specialize in editing high-retention Instagram Reels and YouTube Shorts. From script to final cut, I craft content with smooth transitions, trend-savvy audio, and storytelling designed to capture attention and drive results.
     </p>
   </section>
 
-  <section class="animated-gradient py-16 px-8 text-center text-white fade-in relative">
-    <h2 class="text-4xl font-bold mb-8">🚀 My Skills</h2>
-    <div class="flex flex-wrap justify-center gap-4 text-lg font-medium relative z-10">
-      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Premiere Pro</span>
-      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Instagram Reels</span>
-      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">YouTube Shorts</span>
-      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Script-to-Reel Execution</span>
-      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Voiceovers & Music Sync</span>
-      <span class="bg-black bg-opacity-40 px-6 py-2 rounded-full shadow-lg">Hook + CTA Design</span>
+  <!-- Skills Section -->
+  <section class="py-16 px-8 text-center fade-in bg-gray-900">
+    <h2 class="section-title">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-4 text-base font-medium">
+      <span class="bg-gray-800 px-6 py-2 rounded-full">Premiere Pro</span>
+      <span class="bg-gray-800 px-6 py-2 rounded-full">Instagram Reels</span>
+      <span class="bg-gray-800 px-6 py-2 rounded-full">YouTube Shorts</span>
+      <span class="bg-gray-800 px-6 py-2 rounded-full">Script-to-Reel Execution</span>
+      <span class="bg-gray-800 px-6 py-2 rounded-full">Voiceovers & Music Sync</span>
+      <span class="bg-gray-800 px-6 py-2 rounded-full">Hook + CTA Design</span>
     </div>
   </section>
 
-  <section id="contact" class="bg-black py-16 px-8 text-center fade-in">
-    <h2 class="text-4xl font-bold mb-6">📬 Contact Me</h2>
-    <p class="mb-4 text-gray-300 text-lg">Let’s collaborate to make your next viral reel. Just drop a message!</p>
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-8 text-center fade-in">
+    <h2 class="section-title">Contact</h2>
+    <p class="mb-4 text-gray-300 text-lg">Let’s collaborate on your next project.</p>
     <div class="text-lg">
       <p class="mb-2">Instagram (Main): <a href="https://www.instagram.com/chaiitanya__" class="text-blue-400 hover:underline" target="_blank">@chaiitanya__</a></p>
       <p class="mb-2">Instagram (Work): <a href="https://www.instagram.com/om.chinchole_/" class="text-blue-400 hover:underline" target="_blank">@om.chinchole_</a></p>
       <p class="mb-2">Email: <a href="mailto:chaitanyachinchole7@gmail.com" class="text-blue-400 hover:underline">chaitanyachinchole7@gmail.com</a></p>
-      <p class="mt-4">
-        <a href="https://forms.gle/APPjDH6XdxnRFBKS8" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300" target="_blank">📄 Enquiry Form</a>
+      <p class="mt-6">
+        <a href="https://forms.gle/APPjDH6XdxnRFBKS8"
+           class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300"
+           target="_blank">
+           Send Enquiry
+        </a>
       </p>
     </div>
   </section>
 
-  <footer class="text-center text-gray-400 text-sm py-6 border-t border-gray-700 bg-gray-900">
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-800 bg-black">
     © 2025 Chaitanya Chinchole. All rights reserved.
   </footer>
 </body>
