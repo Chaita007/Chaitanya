@@ -10,7 +10,6 @@
     body {
       font-family: 'Outfit', sans-serif;
     }
-    /* Gradient background */
     .animated-gradient {
       background: linear-gradient(270deg, #1e3a8a, #6b21a8, #1e40af);
       background-size: 300% 300%;
@@ -21,8 +20,6 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
-    /* Fade in animation */
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
@@ -34,8 +31,6 @@
         transform: translateY(0);
       }
     }
-
-    /* Dark overlay for header */
     header::before {
       content: '';
       position: absolute;
@@ -43,13 +38,9 @@
       background: rgba(0, 0, 0, 0.6);
       z-index: 10;
     }
-
-    /* Special font for name */
     .name-font {
       font-family: 'Helvetica', 'Arial', sans-serif;
     }
-
-    /* Sharper visuals */
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -65,25 +56,21 @@
       <source src="background.mp4" type="video/mp4" />
     </video>
     <div class="z-20">
-      <!-- Helvetica font applied here -->
       <h1 class="text-5xl md:text-6xl font-bold text-white name-font">Chaitanya Chinchole</h1>
       <p class="text-xl text-blue-400 mt-4 italic animate-pulse">🎬 Turning Scrolls into Engagement – One Reel at a Time</p>
       <a href="#contact" class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">Let’s Work Together</a>
     </div>
   </header>
 
-  <section class="p-8 fade-in">
-    <h2 class="text-3xl font-bold mb-6 text-center border-b-2 border-blue-500 inline-block pb-2">📂 Featured Reels</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-gray-800 p-6 rounded-xl text-center shadow-lg card">
-        <h3 class="text-xl font-semibold mb-2">🔥 Reel 1</h3>
-        <a href="https://www.instagram.com/reel/DK_srnoJLAU/?utm_source=ig_web_copy_link&igsh=ams0a2NlMGtweW85" class="text-blue-400 hover:underline" target="_blank">Watch Now</a>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-xl text-center shadow-lg card">
-        <h3 class="text-xl font-semibold mb-2">🔥 Reel 2</h3>
-        <a href="https://www.instagram.com/reel/DK_shxbpKtZ/?utm_source=ig_web_copy_link&igsh=MXgzc2o1aDBvY3FveQ==" class="text-blue-400 hover:underline" target="_blank">Watch Now</a>
-      </div>
-    </div>
+  <!-- 🔥 Drive Portfolio Section -->
+  <section class="p-8 fade-in text-center">
+    <h2 class="text-3xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-2">📂 My Portfolio</h2>
+    <p class="text-lg text-gray-300 mb-4">Check out my editing work directly from Google Drive:</p>
+    <a href="https://drive.google.com/drive/folders/YOUR_LINK_HERE" 
+       class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300" 
+       target="_blank">
+       🚀 View My Work
+    </a>
   </section>
 
   <section class="bg-gray-900 py-16 px-8 text-center fade-in">
@@ -123,4 +110,3 @@
   </footer>
 </body>
 </html>
-
